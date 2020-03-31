@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: ware-fast-dfs
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 20MB
+fdfs:
+  # 链接超时
+  connect-timeout: 600
+  # 读取时间
+  so-timeout: 600
+  # 生成缩略图参数
+  thumb-image:
+    width: 150
+    height: 150
+  #修改一下连接地址即可传输
+  tracker-list: 192.168.1.146:22122
